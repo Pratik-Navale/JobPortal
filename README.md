@@ -6,7 +6,8 @@ A Simple Job Application Website aims in creating a user friendly environment fo
 The website takes responses form the user which could be seen by the administrator 
 The Job Application Site has been designed using Django which is a module under Python
 
-![alt text](https://static.djangoproject.com/img/logos/django-logo-negative.1d528e2cb5fb.png)
+<!-- ![](readme-images/django.gif) -->
+<img src="readme-images/django.gif" width="1000" height="500"/>
 
 This project contains login authentication system for users and an user friendly job application interface.
 Admin can view the user profile and the respective job applications filled by the users.
@@ -44,5 +45,7 @@ Now the you should be able to see the site on your localhost server ....
 ## Images For Our Site
 
 ### Home Page
+
+<img src="readme-images/home.png" />
 
 
