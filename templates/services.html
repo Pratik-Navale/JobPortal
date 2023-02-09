@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .bar {
+            background-color: white;
+            overflow: hidden;
+        }
+        
+        .bar a {
+            float: right;
+            color: #1e0080;
+            text-align: center;
+            padding: 24px 37px;
+            text-decoration: none;
+            font-size: 23px;
+        }
+        
+        .bar a:hover {
+            color: #b83b5ebd;
+        }
+        
+        .bar a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+        
+        .logo-img {
+            float: left;
+            position: relative;
+            /* padding: 12px 23px; */
+            /* margin: 10px 15px 15px 10px; */
+        }
+        
+        body {
+            background-color: white;
+            font-family: 'FontAwesome';
+        
+        }
+        
+        .head {
+            background-image: url('/static/img.jpg');
+            font-weight: 800;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 133px 30px;
+        }
+        
+        #hf {
+            text-align: center;
+            font-size: 48px;
+            color: white;
+        }
+        
+        #h1f {
+            text-align: left;
+            font-size: 27px;
+            color: #1e0080;
+            padding: 14px;
+            margin-left: 10px;
+            font-size: 40px;
+
+        }
+        #h2f{
+            text-align: left;
+            font-size: 27px;
+            color: #1e0080;
+            padding: 14px;
+            margin-left: 10px;
+            float :right;
+        }
+        
+        .pal {
+            border: 2px solid black;
+            border-radius: 30px;
+            float: left;
+            padding: 20px 20px;
+            text-align: left;
+            display: inline-block;
+        }
+        
+        .pal:hover {
+            background-color: orange;
+        
+        }
+        
+        
+        #box1 {
+            text-align: left;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color:#1e0080 ;
+        }
+        
+        #box1:hover {
+            color:white;
+        }
+        
+        #box2 {
+            text-align: right;
+            text-decoration: none;
+            padding-left: 184px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: #1e0080;
+        }
+        
+        #box2:hover {
+            color: white;
+        }
+        
+        #bt {
+            border: none;
+            border-radius: 40px;
+            background-color: #b83b5ebd;
+            color: white;
+            float: right;
+            padding: 12px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 23px;
+            margin: 12px 2px;
+            cursor: pointer;
+        }
+        
+        #bt:hover {
+            color: white;
+            background-color: orange;
+        }
+        
+        footer {
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            /* background-color: #747579; */
+            color: black;
+            text-align: center;
+            display: inline-block;
+            margin-top: 60px;
+        }
+        
+        .fa {
+            padding: 20px;
+            font-size: 25px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+        }
+        
+        .fa:hover {
+            opacity: 0.7;
+        }
+        
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+        
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+        
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+        
+        .fa-youtube {
+            background: #bb0000;
+            color: white;
+        }
+        
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+        .head1 {
+            background-image: url('/static/service1.jpg');
+            color: white;
+            font-weight: 800;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 133px 30px;
+            margin:0px -9px;
+            font-size: xx-large;
+        }
+
+        .p {
+            border: none;
+            float: right;
+            padding: 20px 20px;
+            text-align: left;
+            display: inline-block;
+            margin-top: -40px;
+            margin-right: 110px;
+            margin-left: 10px;
+            font-size: x-large;
+        }
+
+        .p1 {
+            border: none;
+            float: right;
+            padding: 20px 20px;
+            text-align: left;
+            display: inline-block;
+            margin-top: 100px;
+            margin-right: 71px;
+        }
+        .p2 {
+            border: none;
+            /* float: right; */
+            padding: 20px 20px;
+            text-align: left;
+            display: inline-block;
+            margin-top: 340px;
+            margin-left: -519px;
+            margin-bottom: 100px;
+            font-size: x-large;
+
+        }
+        .p3{
+            border: none;
+            float: right;
+            padding: 20px 20px;
+            text-align: left;
+            display: inline-block;
+            margin-top: 0px;
+            margin-right: 1px;
+            font-size: x-large;
+        }
+
+        .har {
+            border: none;
+            border-radius: 30px;
+            float: left;
+            position: relative;
+            margin-left: 49px;
+            margin-top: 26px;
+            margin-bottom: 86px;
+        }
+
+        .har1 {
+            
+            border-radius: 30px;
+            margin-right: 15px;
+            margin-top: 80px;
+            float: right;
+            margin-left: 200;
+            padding: 30;
+            padding-left: 20px;
+            margin-left: 150px;
+            margin-right: 100px;
+            margin-top: -370px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="logo-img" src="/static/logo1.png" width="120" height="73" ALT="align box" ALIGN=CENTER>
+        <img class="logo-img" src="/static/logo2.png" width="180" height="73" ALT="align box" ALIGN=CENTER>
+        <nav class="bar">
+            <a href="/loguser" id="bt">Log In</a>
+            <a href="/services">Services</a>
+            <a href="/about">About</a>
+            <a href="/home">Home</a>
+        </nav>
+    </header>
+    <div class="head1">
+        <h1 id="hf1">Technology</h1>
+        <h3>Scale insight generation with next-gen technology</h3>
+    </div>
+    <h2 id="h1f">What do we offer?</h2>
+    <div class="p">
+        <h2 id="h1f">Cloud & Data Engineering</h2>
+        <ul>
+            <li>Consult: align the data roadmap with business</li>
+            <li>Engineer: build scalable data platforms</li>
+            <li>Migrate: transition data smoothly to cloud</li>
+            <li>DevOps: deploy automated monitoring</li>
+            <li>Proven expertise on leading cloud platforms like AWS</li>
+        </ul>
+    </div>
+    <span>
+        <img class="har" src="/static/service2.jpg" width="462" height="325">
+    </span>
+    <div class="p2">
+        <h2 id="h1f">Data Visualization</h2>
+        <ul>
+            <li>Design: performance metrics to meet business needs</li>
+            <li>Build: analytics data cloud to aggregate & store data</li>
+            <li>Implement: visualization tools to deliver easy-to-use views</li>
+            <li>Migrate: smoothly transition data across tools</li>
+            <li>Maintain: ongoing refreshes & new data integrations</li>
+        </ul>
+    </div>
+    <span>
+        <img class="har1" src="/static/service3.jpg" width="462" height="325">
+    </span>
+    <div class="p3">
+        <h2 id="h1f">Experience Management</h2>
+        <ul>
+            <li>Advise: program strategy & customer journey</li>
+            <li>Implement: accelerate with business packages</li>
+            <li>Integrate: connect systems for holistic insights</li>
+            <li>Manage: seamless data across touch points and channels</li>
+            <li>Maintain: maximize output with deeper insights</li>
+        </ul>
+    </div>
+    <div>
+        <img class="har" src="/static/service4.jpg" width="462" height="325">
+    </div>
+    <footer>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <h3>© 2022 Packard Thecnologies. All Rights Reserved</h3>
+    </footer>
+
+</body>
+
+</html>

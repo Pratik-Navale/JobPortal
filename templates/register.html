@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .bar {
+            background-color: white;
+            overflow: hidden;
+        }
+
+        .bar a {
+            float: right;
+            color: #1e0080;
+            text-align: center;
+            padding: 24px 37px;
+            text-decoration: none;
+            font-size: 23px;
+        }
+
+        .bar a:hover {
+            color: #b83b5ebd;
+        }
+
+        .bar a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        .logo-img {
+            float: left;
+            position: relative;
+            /* padding: 12px 23px; */
+            /* margin: 10px 15px 15px 10px; */
+        }
+
+        body {
+            background-image: url('/static/img5.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: 'FontAwesome';
+            margin: 0;
+
+        }
+
+
+        .pal {
+            border: 2px solid black;
+            border-radius: 30px;
+            float: left;
+            padding: 20px 20px;
+            text-align: left;
+            display: inline-block;
+            margin: 15px 6px;
+        }
+
+        .pal:hover {
+            background-color: orange;
+
+        }
+
+
+        #box1 {
+            text-align: left;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: #1e0080;
+        }
+
+        #box1:hover {
+            color: white;
+        }
+
+        #box2 {
+            text-align: right;
+            text-decoration: none;
+            padding-left: 184px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: #1e0080;
+        }
+
+        #box2:hover {
+            color: white;
+        }
+
+        #bt {
+            border: none;
+            border-radius: 40px;
+            background-color: #b83b5ebd;
+            color: white;
+            float: right;
+            padding: 12px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 23px;
+            margin: 12px 2px;
+            cursor: pointer;
+        }
+
+        #bt1 {
+            border: none;
+            border-radius: 40px;
+            background-color: white;
+            color: #1e0080;
+            float: right;
+            padding: 12px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 23px;
+            margin: 8px 12px;
+            font-family: 'Comfortaa';
+        }
+
+        #bt:hover {
+            color: white;
+            background-color: orange;
+        }
+
+        footer {
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            /* background-color: #747579; */
+            color: black;
+            text-align: center;
+            display: inline-block;
+            margin: 0px 0px;
+        }
+
+        .fa {
+            padding: 20px;
+            font-size: 25px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+
+        .fa-youtube {
+            background: #bb0000;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+
+        .gn {
+            font-size: 30px;
+            margin: 65px 45px;
+            text-align: center;
+        }
+
+        .gn2 {
+            border: 1px solid #CCCCCC;
+            border-radius: 5px 5px 5px 5px;
+            background-color: lightsalmon;
+            font-size: 25px;
+            padding: 35px 10px;
+            margin: 12px 45px;
+            text-align: left;
+
+        }
+
+        #use {
+            font-size: 35px;
+            border: black solid;
+            border-radius: 12px;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        #sign {
+            border: none;
+            border-radius: 40px;
+            background-color: black;
+            color: white;
+            width: 160px;
+            padding: 12px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 23px;
+            /* margin: 12px 12px; */
+            cursor: pointer;
+        }
+
+        #sign:hover {
+            opacity: 0.7;
+        }
+
+        .btbody {
+            font-family: 'Comfortaa';
+        }
+
+        .reg {
+            display: inline-block;
+        }
+
+        .reg1 {
+            display: inline-block;
+            margin-left: 85px;
+        }
+
+        #jobs {
+            font-family: 'Comfortaa';
+            font-size: 35px;
+            border: black solid;
+            border-radius: 12px;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            text-align: left;
+            width: 521px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="logo-img" src="/static/logo1.png" width="120" height="73" ALT="align box" ALIGN=CENTER>
+        <img class="logo-img" src="/static/logo2.png" width="180" height="73" ALT="align box" ALIGN=CENTER>
+        <nav class="bar">
+            <a href="/home" id="bt">Log Out</a>
+            {% if user.is_authenticated %}
+            <button id="bt1">{{ username }}</button>
+            {% endif %}
+            <a href="/services">Services</a>
+            <a href="/about">About</a>
+            <a href="/home2">Home</a>
+        </nav>
+    </header>
+    <div>
+        <h1 class="gn">Please fill the details correctly</h1>
+    </div>
+    <form action='/register' method='post' onsubmit="myFunction()">
+        {% csrf_token %}
+        <div class="gn2">
+            <div class="reg">First Name<br><input type="text" id="use" size="25" name="fname" required></div>
+            <div class="reg1">Last Name<br><input type="text" id="use" size="25" name="lname" required></div>
+            <div class="reg">Email<br><input type="email" id="use" size="25" name="email" required></div>
+            <div class="reg1">Contact Number<br><input type="number" id="use" maxlength="10" style=" width: 513px;"
+                    name="cont" required></div>
+            <div class="reg">
+                <label for="jobs">Applying for Expertise</label><br>
+                <select id="jobs" name="jobs" required>
+                    <option value="Data Engineer">Data Engineer</option>
+                    <option value="Sr. Software Engineer">Sr. Software Engineer</option>
+                    <option value="Business Systems Analyst">Business Systems Analyst</option>
+                    <option value="Lead Software Engineer">Lead Software Engineer</option>
+                    <option value="Technical Project Manager">Technical Project Manager</option>
+                    <option value="Sr. Quality Analyst">Sr. Quality Analyst</option>
+                    <option value="Lead Data Engineer">Lead Data Engineer</option>
+                </select>
+            </div>
+            <div class="reg1">City/Location<br><input type="text" id="use" size="25" name="city" required></div>
+            <div class="reg">Current/Last Organization<br><input type="text" id="use" size="25" name="org" required>
+            </div>
+            <div class="reg1">Years of experience<br><input type="number" id="use" maxlength="3" style=" width: 513px;"
+                    name="year1" required></div>
+            <div class="reg">LinkedIn Profile Page URL<br><input type="url" id="use" size="25" name="link" required>
+            </div>
+            <div class="reg1">EP no. (If already registered with PT)<br><input type="text" id="use" size="25" name="ep"
+                    required></div>
+            <div class="reg">Resume / CV* Upload .pdf or .doc files upto 5 MB<br><input type="file" id="use"
+                    class="btbody" name="doc" required></div>
+            <br>
+            <button class="btbody" id="sign" type="submit">Submit</button>
+        </div>
+    </form>
+    <script>
+        function myFunction() {
+            alert("Your Registeration is sucessfull");
+        }
+    </script>
+
+    <footer>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <h3>© 2022 Packard Thecnologies. All Rights Reserved</h3>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .bar {
+            background-color: white;
+            overflow: hidden;
+        }
+
+        .bar a {
+            float: right;
+            color: #1e0080;
+            text-align: center;
+            padding: 24px 37px;
+            text-decoration: none;
+            font-size: 23px;
+        }
+
+        .bar a:hover {
+            color: #b83b5ebd;
+        }
+
+        .bar a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        .logo-img {
+            float: left;
+            position: relative;
+        }
+
+        body {
+            background-image: url('/static/img5.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: white;
+            font-family: 'FontAwesome';
+
+        }
+
+        .pal {
+            border: 2px solid black;
+            border-radius: 30px;
+            float: left;
+            padding: 20px 20px;
+            text-align: left;
+            display: inline-block;
+            margin: 15px 6px;
+        }
+
+        .pal:hover {
+            background-color: orange;
+
+        }
+
+        #bt {
+            border: none;
+            border-radius: 40px;
+            background-color: #b83b5ebd;
+            color: white;
+            float: right;
+            padding: 12px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 23px;
+            margin: 12px 2px;
+            cursor: pointer;
+        }
+
+        #bt:hover {
+            color: white;
+            background-color: orange;
+        }
+
+        footer {
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            color: black;
+            text-align: center;
+            display: inline-block;
+            margin: 0px 0px;
+        }
+
+        .fa {
+            padding: 20px;
+            font-size: 25px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+
+        .fa-youtube {
+            background: #bb0000;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+
+        .gn {
+            font-size: 35px;
+            margin: 5px 180px;
+            text-align: center;
+        }
+
+        .gn1 {
+            font-size: 25px;
+            margin: 12px 45px;
+        }
+
+        .gn11 {
+            font-size: 37px;
+            margin: 12px 6px;
+            margin-bottom: 30px;
+        }
+
+        .gn2 {
+            border: 1px solid #CCCCCC;
+            border-radius: 5px 5px 5px 5px;
+            background-color: lightsalmon;
+            font-size: 35px;
+            padding: 35px 10px;
+            margin: 12px 360px;
+            width: 485px;
+            margin-left: 500px;
+
+
+        }
+
+        .use {
+            font-size: 35px;
+            border: black solid;
+            border-radius: 12px;
+            margin: 0.625em 0 0 0;
+        }
+
+        #sign {
+            border: none;
+            border-radius: 40px;
+            background-color: black;
+            color: white;
+            width: 160px;
+            padding: 12px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 23px;
+            cursor: pointer;
+        }
+
+        #sign1 {
+            border: none;
+            border-radius: 40px;
+            background-color: black;
+            color: white;
+            width: 160px;
+            padding: 12px 1px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 23px;
+            cursor: pointer;
+        }
+
+        #sign:hover {
+            opacity: 0.7;
+        }
+
+        .btbody {
+            font-family: 'Comfortaa';
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="logo-img" src="/static/logo1.png" width="120" height="73" ALT="align box" ALIGN=CENTER>
+        <img class="logo-img" src="/static/logo2.png" width="180" height="73" ALT="align box" ALIGN=CENTER>
+        <nav class="bar">
+            <a href="/home2" id="bt">Log In</a>
+            <a href="/services">Services</a>
+            <a href="/about">About</a>
+            <a href="/home">Home</a>
+        </nav>
+    </header>
+    {% for message in messages %}
+    <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+        <strong>Message : </strong> {{ message }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endfor %}
+    
+    <form action='/loguser' method='post'>
+        <div>
+            <h1 class="gn">Already registered? Login with username and password below.</h1>
+            <h1 class="gn">Else register to create new account</h1>
+        </div>
+        {% csrf_token %}
+        <div class="gn2">
+            Username<br><input type="text" name="username" class="use" id="logemail" size="24"><br>
+            <br>
+            Password<br><input type="password" name="pass1" class="use" id="logpass1" size="24"><br><br>
+            <button class="btbody" id="sign" type="submit">Log In</button>&nbsp;&nbsp;&nbsp;<span><a href="/register1"
+                    class="btbody" id="sign1">Register</a></span>
+        </div>
+        
+    </form>
+    <!-- <div class="gn2">
+        <h3 class="gn11">Starting a new application? Register below.</h3>
+        <a href="/register" class="btbody" id="sign1">Register</a>
+    </div> -->
+    <footer>
+        {% comment %} <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-instagram"></a> {% endcomment %}
+        <h3>© 2022 Packard Thecnologies. All Rights Reserved</h3>
+    </footer>
+</body>
+
+</html>
